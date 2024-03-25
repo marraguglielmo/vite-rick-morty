@@ -23,8 +23,8 @@ export default{
         }
       })
       .then(result =>{
-        this.store.pageList = result.data.results
-        console.log(this.store.pageList);
+        this.store.cardList = result.data.results
+        console.log(this.store.cardList);
       })
       .catch(error =>{
         console.log(error);
