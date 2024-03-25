@@ -19,7 +19,7 @@ export default{
     getApi(){
       axios.get(this.store.apiUrl, {
         params:{
-          page: 1
+          page: 15
         }
       })
       .then(result =>{
@@ -46,5 +46,10 @@ export default{
 </template>
 
 <style lang="scss">
+
+body{
+  background-color: rgb(141, 128, 202);
+  background-image: linear-gradient(180deg, rgb(128, 114, 188) 0%, rgba(89, 81, 136, 1) 100%);
+}
 
 </style>
