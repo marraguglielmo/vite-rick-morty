@@ -23,7 +23,8 @@ export default{
         }
       })
       .then(result =>{
-        console.log(result.data);
+        this.store.pageList = result.data.results
+        console.log(this.store.pageList);
       })
       .catch(error =>{
         console.log(error);
