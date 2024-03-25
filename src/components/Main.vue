@@ -21,6 +21,10 @@ import Card from './partials/Card.vue';
         <Card 
             v-for="card in this.store.cardList" 
             :key="card.id"
+            :name="card.name"
+            :status="card.status"
+            :species="card.species"
+            :img="card.image"
         />
 
     </div>

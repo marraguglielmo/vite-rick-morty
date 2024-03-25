@@ -19,7 +19,7 @@ export default{
     getApi(){
       axios.get(this.store.apiUrl, {
         params:{
-          page: 2
+          page: 1
         }
       })
       .then(result =>{
