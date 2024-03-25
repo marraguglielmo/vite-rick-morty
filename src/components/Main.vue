@@ -10,7 +10,7 @@ import {store} from '../data/store';
 </script>
 
 <template>
-    <div>{{ store.counter }}</div>
+    
 </template>
 
 <style lang="scss">
