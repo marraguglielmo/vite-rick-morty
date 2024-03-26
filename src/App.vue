@@ -34,13 +34,14 @@ export default{
     getAllName(){
       axios.get(this.store.nameUrl)
       .then(newRes =>{
-        console.log(newRes.data.results);
+        // console.log(newRes.data.results);
         // rimappo la lista di tutti i personaggi
         this.store.nameList = newRes.data.results.map(name => name.name);
         // in questo modo ottengo solo i nomi
         console.log(this.store.nameList);
       })
-    }
+    },
+
   },
 
   mounted(){
