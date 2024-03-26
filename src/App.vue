@@ -1,8 +1,8 @@
 <script>
+import {store} from './data/store';
 import axios from 'axios';
 import Main from './components/Main.vue';
 import Header from './components/Header.vue';
-import {store} from './data/store';
 export default{
   components:{
     Header,
@@ -51,7 +51,7 @@ export default{
 
 <template>
 
-  <Header />
+  <Header @search="getApi"/>
 
   <Main />
 

@@ -11,7 +11,13 @@ export default{
     methods:{
         // aggiungo la funzione per la ricerca del nome
         search(){
-        console.log('ricerca');
+            console.log('ricerca');
+            this.store.queryParams = {
+                page: 1,
+                nameToSearch: this.nameToSearch
+            }
+            console.log('ricerca');
+            this.$emit('search');
         }
     }
 }
