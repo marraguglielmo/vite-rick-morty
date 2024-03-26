@@ -18,9 +18,7 @@ export default{
   methods:{
     getApi(){
       axios.get(this.store.apiUrl, {
-        params:{
-          page: 14
-        }
+        params: store.queryParams
       })
       .then(result =>{
         this.store.cardList = result.data.results
