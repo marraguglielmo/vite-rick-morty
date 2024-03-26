@@ -40,12 +40,16 @@
     .gm_card{
     widows: 100px;
     min-height: 400px;
+    &:hover .card-img{
+        scale: 1.1;
+        transition: scale .2s;
+    }
     .line{
         margin: 0 auto;
         width: 20%;
         border-top: 2px solid black;
         border-radius: 50px;
-    }
+        }
     }
 }
 
