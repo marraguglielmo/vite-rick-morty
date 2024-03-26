@@ -13,8 +13,7 @@ export default{
         search(){
             console.log('ricerca');
             this.store.queryParams = {
-                page: 1,
-                nameToSearch: this.nameToSearch
+                name: this.nameToSearch
             }
             console.log('ricerca');
             this.$emit('search');
